@@ -22,6 +22,8 @@ function megjelenit() {
         div.textContent = i.name
         div.style.textAlign = "center"
         div.style.alignContent = "center"
+
+        div.classList.add("szinel")
         if (i.textColor == "light") {
             div.style.color = "white"
         }
@@ -29,7 +31,7 @@ function megjelenit() {
 
         div.addEventListener("click", () =>{
             let save = adatok[div]
-            adatok.splice(div, 1)
+            adatok.splice(adatok.indexOf(div), 1)
             adatok.splice(0, 0, save)
             fo.innerHTML = ""
             megjelenit()

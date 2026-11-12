@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festéküzlet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
 </head>
 <body>
+    <form action="" id="form">
+        <div class="row">
+            <div class="col">
+                <label for="nev">Name</label><br>
+                    <input type="text" id="felvett_nev" value="">
+
+            </div>
+            <div class="col">
+                <label for="szin">CSSValue</label><br>
+                <input type="text" id="felvett_css" value="">
+                
+            </div>
+            <div class="col">
+                <label for="szin">TextColor</label><br>
+                <input type="text" id="felvett_textcolor" value="">     
+
+            </div>
+            <div class="col">
+                <button type="submit" id="gomb" class="btn btn-primary" value="Submit">Add</button>
+
+            </div>
+        </div>
+    </form>
+    <main id="fo" class="d-flex flex-wrap">
+        <h1 id="welcome">Welcome to our paint shop. Please wait a few seconds to see our paint selection...</h1>
+    </main>
     
     <script src="main.js"></script>
 </body>
